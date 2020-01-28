@@ -14,20 +14,21 @@ public class BibliotecaAppTest {
     @Before
     public void setUp() throws Exception {
         bibliotecaApp = new BibliotecaApp();
+
+
     }
 
     @Test
 
     public void shouldShowWelcomeMessage() {
-
         String message = bibliotecaApp.welcomeMessage();
-
         assertEquals("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!", message);
-
     }
 
-    public void listAllBooks(){
-        assertNotNull(bibliotecaApp.listOfBooks());
+    public void getAllBooks(){
+        assertNotNull(bibliotecaApp.getAllBooks());
     }
+
+
 
 }
