@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1X23wOXqqY4h0GAdVrkExx5Vp48" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -22,7 +29,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -36,9 +43,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BibliotecaAppTest.shouldReturnWelcomeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaAppTest" />
+      <option name="METHOD_NAME" value="shouldReturnWelcomeMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BibliotecaAppTest.shouldShowWelcomeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaAppTest" />
+      <option name="METHOD_NAME" value="shouldShowWelcomeMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.BibliotecaAppTest.shouldShowWelcomeMessage" />
+        <item itemvalue="JUnit.BibliotecaAppTest.shouldReturnWelcomeMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -60,25 +101,36 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="440" y="162" key="#Project_Structure/0.23.1680.947@0.23.1680.947" timestamp="1580230674149" />
-    <state width="1638" height="253" key="GridCell.Tab.0.bottom" timestamp="1580230744696">
+    <state width="1638" height="253" key="GridCell.Tab.0.bottom" timestamp="1580245114980">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="253" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1580230744696" />
-    <state width="1638" height="253" key="GridCell.Tab.0.center" timestamp="1580230744695">
+    <state width="1638" height="253" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1580245114980" />
+    <state width="1638" height="253" key="GridCell.Tab.0.center" timestamp="1580245114979">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="253" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1580230744695" />
-    <state width="1638" height="253" key="GridCell.Tab.0.left" timestamp="1580230744694">
+    <state width="1638" height="253" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1580245114979" />
+    <state width="1638" height="253" key="GridCell.Tab.0.left" timestamp="1580245114978">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="253" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1580230744694" />
-    <state width="1638" height="253" key="GridCell.Tab.0.right" timestamp="1580230744695">
+    <state width="1638" height="253" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1580245114978" />
+    <state width="1638" height="253" key="GridCell.Tab.0.right" timestamp="1580245114979">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="253" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1580230744695" />
+    <state width="1638" height="253" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1580245114979" />
     <state x="341" y="135" key="SettingsEditor" timestamp="1580230619612">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="341" y="135" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1580230619612" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

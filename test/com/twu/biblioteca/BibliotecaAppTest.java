@@ -26,4 +26,8 @@ public class BibliotecaAppTest {
 
     }
 
-} 
+    public void listAllBooks(){
+        assertNotNull(bibliotecaApp.listOfBooks());
+    }
+
+}
