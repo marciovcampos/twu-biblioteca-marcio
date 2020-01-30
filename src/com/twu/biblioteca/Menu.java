@@ -12,6 +12,7 @@ public class Menu {
 
     public void CreateMenu(){
         this.add("1. List of Books");
+        this.add("9. Exit");
     }
 
     public List<String> getMenuOptions() {
@@ -27,7 +28,7 @@ public class Menu {
 
         for (String option : menuOptions
              ) {
-            System.out.println(option+"\n");
+            System.out.println(option);
         }
     }
 
@@ -38,6 +39,9 @@ public class Menu {
                 bibliotecaApp.insertBooks();
                 bibliotecaApp.printListBooks();
                 break;
+
+            case 9:
+                System.exit(0);
 
             default:
                 System.out.println("Please select a valid option!");
