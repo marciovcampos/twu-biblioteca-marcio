@@ -29,10 +29,7 @@ public class BibliotecaApp {
             optionNumber = scanner.nextInt();
             menu.select(optionNumber);
         }
-        while (optionNumber != 0);
-
-        bibliotecaApp.insertBooks();
-        bibliotecaApp.printListBooks();
+        while (optionNumber != 9);
 
     }
 
