@@ -40,7 +40,7 @@ public class Menu {
                 break;
 
             default:
-                System.out.println("Select a valid option!");
+                System.out.println("Please select a valid option!");
                 break;
         }
     }
