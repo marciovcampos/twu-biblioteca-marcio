@@ -40,6 +40,9 @@ public class Menu {
                 bibliotecaApp.createAllBooks();
                 bibliotecaApp.printListBooks();
                 break;
+            case 2:
+                Librarian lib = new Librarian();
+                System.out.println("CHECK OUT");
 
             case 9:
                 System.exit(0);

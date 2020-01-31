@@ -36,4 +36,16 @@ public class LibrarianTest {
 
     }
 
+    @Test
+    public void shouldFindBookById(){
+        BibliotecaApp bibliotecaApp = new BibliotecaApp();
+
+        bibliotecaApp.add(new Book(1, "B1", "A1", 2001));
+        bibliotecaApp.add(new Book(2, "B2", "A2", 2002));
+
+        Book bookFound = bibliotecaApp.getBookById(1);
+
+        assertEquals(1, bookFound.getId());
+    }
+
 }

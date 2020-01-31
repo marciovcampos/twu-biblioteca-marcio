@@ -76,6 +76,18 @@ public class BibliotecaApp {
 
     }
 
+    public Book getBookById(int id){
+
+        Book b = null;
+        for (Book book: this.bookList
+             ) {
+            if(id == book.getId()){
+                b = book;
+            }
+        }
+        return b;
+    }
+
 }
 
 
