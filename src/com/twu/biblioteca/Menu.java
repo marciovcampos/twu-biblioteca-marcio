@@ -37,7 +37,7 @@ public class Menu {
         switch (option){
             case 1:
                 BibliotecaApp bibliotecaApp = new BibliotecaApp();
-                bibliotecaApp.insertBooks();
+                bibliotecaApp.createAllBooks();
                 bibliotecaApp.printListBooks();
                 break;
 

@@ -12,6 +12,10 @@ public class BibliotecaApp {
         return bookList;
     }
 
+    public BibliotecaApp() {
+        bookList = new ArrayList<Book>();
+    }
+
     public static void main(String[] args) {
 
         BibliotecaApp bibliotecaApp = new BibliotecaApp();
@@ -37,22 +41,20 @@ public class BibliotecaApp {
         return "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
     }
 
-    public void insertBooks(){
-        this.bookList = getAllBooks();
-    }
-
     public void printListBooks(){
         for (Book b: getBookList()) {
             System.out.format("%-30.30s %-30.30s %-30.30s %n", b.getTitle(), b.getAuthor(), b.getYear());
         }
     }
 
-    public ArrayList<Book> getAllBooks(){
-        ArrayList<Book> bookList = new ArrayList<Book>();
-        bookList.add(new Book(1,"Book 1", "Author 1", 2000));
-        bookList.add(new Book(2, "Book 2", "Author 2", 2001));
-        bookList.add(new Book(3,"Book 3", "Author 3", 2002));
-        return bookList;
+    public void add(Book book){
+        this.bookList.add(book);
+    }
+
+    public void createAllBooks(){
+        this.bookList.add(new Book(1,"Book 1", "Author 1", 2000));
+        this.bookList.add(new Book(2, "Book 2", "Author 2", 2001));
+        this.bookList.add(new Book(3,"Book 3", "Author 3", 2002));
     }
 
 }
