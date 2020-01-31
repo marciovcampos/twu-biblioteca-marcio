@@ -42,7 +42,7 @@ public class BibliotecaApp {
     }
 
     public void printListBooks(){
-        for (Book b: getBookList()) {
+        for (Book b: getAvailableBookList()) {
             System.out.format("%-30.30s %-30.30s %-30.30s %n", b.getTitle(), b.getAuthor(), b.getYear());
         }
     }
@@ -51,10 +51,29 @@ public class BibliotecaApp {
         this.bookList.add(book);
     }
 
+    public void remove(int id){
+        this.bookList.remove(id);
+    }
+
     public void createAllBooks(){
         this.bookList.add(new Book(1,"Book 1", "Author 1", 2000));
         this.bookList.add(new Book(2, "Book 2", "Author 2", 2001));
         this.bookList.add(new Book(3,"Book 3", "Author 3", 2002));
+    }
+
+    public List<Book> getAvailableBookList(){
+
+        List<Book> availableBookList = new ArrayList<Book>();
+
+        for (Book book: this.bookList
+             ) {
+            if(book.getAvailable()){
+                availableBookList.add(book);
+            }
+        }
+
+        return availableBookList;
+
     }
 
 }

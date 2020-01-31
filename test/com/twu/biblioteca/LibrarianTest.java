@@ -18,4 +18,22 @@ public class LibrarianTest {
         lib = new Librarian();
     }
 
+    @Test
+    public void checkoutABook() {
+
+        BibliotecaApp bibliotecaApp = new BibliotecaApp();
+
+        assertThat(0, is(bibliotecaApp.getBookList().size()));
+
+        bibliotecaApp.add(new Book(1, "B1", "A1", 2001));
+        assertThat(1, is(bibliotecaApp.getBookList().size()));
+
+        bibliotecaApp.add(new Book(2, "B2", "A2", 2002));
+        assertThat(2, is(bibliotecaApp.getBookList().size()));
+
+        bibliotecaApp.remove(1);
+        assertThat(1, is(bibliotecaApp.getBookList().size()));
+
+    }
+
 }

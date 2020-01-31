@@ -42,6 +42,7 @@ public class BibliotecaAppTest {
 
         bibliotecaApp.add(new Book(2, "B2", "A2", 2002));
         assertThat(2, is(bibliotecaApp.getBookList().size()));
+
     }
 
 
