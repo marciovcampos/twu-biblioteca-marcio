@@ -2,9 +2,12 @@ package com.twu.biblioteca;
 
 public class Book {
 
+    private int id;
     private String title;
     private String author;
     private Number year;
+
+    public int getId() { return id; }
 
     public String getTitle(){
         return title;
@@ -18,7 +21,8 @@ public class Book {
         return year;
     }
 
-    public Book(String title, String author, Number year){
+    public Book(int id, String title, String author, Number year){
+        this.id = id;
         this.title = title;
         this.author = author;
         this.year = year;

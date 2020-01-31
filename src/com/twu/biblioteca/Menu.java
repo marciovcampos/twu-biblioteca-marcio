@@ -12,6 +12,7 @@ public class Menu {
 
     public void CreateMenu(){
         this.add("1. List of Books");
+        this.add("2. Check out book");
         this.add("9. Exit");
     }
 

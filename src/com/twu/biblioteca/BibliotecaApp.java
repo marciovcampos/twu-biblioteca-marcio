@@ -49,9 +49,9 @@ public class BibliotecaApp {
 
     public ArrayList<Book> getAllBooks(){
         ArrayList<Book> bookList = new ArrayList<Book>();
-        bookList.add(new Book("Book 1", "Author 1", 2000));
-        bookList.add(new Book("Book 2", "Author 2", 2001));
-        bookList.add(new Book("Book 3", "Author 3", 2002));
+        bookList.add(new Book(1,"Book 1", "Author 1", 2000));
+        bookList.add(new Book(2, "Book 2", "Author 2", 2001));
+        bookList.add(new Book(3,"Book 3", "Author 3", 2002));
         return bookList;
     }
 
