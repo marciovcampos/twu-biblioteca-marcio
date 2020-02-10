@@ -57,6 +57,21 @@ public class BibliotecaAppTest {
 
     }
 
+    @Test
+    public void verifyIfReturnBook(){
+
+        bibliotecaApp.add(new Book(1, "B1", "A1", 2001));
+        bibliotecaApp.add(new Book(2, "B2", "A2", 2002));
+        assertThat(2, is(bibliotecaApp.getAvailableBookList().size()));
+
+        bibliotecaApp.checkOutBook(2);
+        assertThat(1, is(bibliotecaApp.getAvailableBookList().size()));
+
+        bibliotecaApp.returnBook(2);
+        assertThat(2, is(bibliotecaApp.getAvailableBookList().size()));
+
+    }
+
 
 
 

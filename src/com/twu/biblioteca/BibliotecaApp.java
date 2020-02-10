@@ -48,6 +48,13 @@ public class BibliotecaApp {
         }
     }
 
+    public void printCheckOutBooks(){
+        System.out.format("%-10s %-10s %-10s %-10s %n", "ID", "TITLE", "AUTHOR", "YEAR");
+        for (Book b: getCheckOutBookList()) {
+            System.out.format("%-10s %-10s %-10s %-10s %n", b.getId(), b.getTitle(), b.getAuthor(), b.getYear());
+        }
+    }
+
     public void add(Book book){
         this.bookList.add(book);
     }
@@ -77,6 +84,21 @@ public class BibliotecaApp {
 
     }
 
+    public List<Book> getCheckOutBookList(){
+
+        List<Book> checkOutBookList = new ArrayList<Book>();
+
+        for (Book book: this.bookList
+        ) {
+            if(!book.getAvailable()){
+                checkOutBookList.add(book);
+            }
+        }
+
+        return checkOutBookList;
+
+    }
+
     public Book getBookById(int id){
 
         Book b = null;
@@ -103,7 +125,18 @@ public class BibliotecaApp {
             System.out.println("Invalid Book!");
         }
 
+    }
 
+    public void returnBook(int id){
+        Book book = getBookById(id);
+
+        try{
+            if(!book.getAvailable()){
+                book.returnBook();
+            }
+        }catch (Exception e){
+            System.out.println("Invalid Book!");
+        }
 
     }
 
