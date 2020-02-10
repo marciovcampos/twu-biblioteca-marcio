@@ -133,6 +133,9 @@ public class BibliotecaApp {
         try{
             if(!book.getAvailable()){
                 book.returnBook();
+                System.out.println("Thank you for returning the book!");
+            }else{
+                System.out.println("Sorry, that book has already been returned!");
             }
         }catch (Exception e){
             System.out.println("Invalid Book!");
