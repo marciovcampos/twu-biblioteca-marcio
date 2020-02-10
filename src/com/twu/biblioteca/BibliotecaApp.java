@@ -138,7 +138,7 @@ public class BibliotecaApp {
                 System.out.println("Sorry, that book has already been returned!");
             }
         }catch (Exception e){
-            System.out.println("Invalid Book!");
+            System.out.println("That is a not valid book to return!");
         }
 
     }
