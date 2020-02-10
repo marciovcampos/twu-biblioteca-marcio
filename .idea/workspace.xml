@@ -7,10 +7,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/LibrarianTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/LibrarianTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +42,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="JUnit.LibrarianTest.shouldFindBookById">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -125,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibrarianTest.shouldFindBookById" />
         <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.LibrarianTest.shouldFindBookById" />
         <item itemvalue="JUnit.BookTest.shouldChangeAvailableBook" />
         <item itemvalue="JUnit.LibrarianTest.checkoutABook" />
         <item itemvalue="JUnit.BibliotecaAppTest.verifyIfCreatedBooks" />
@@ -155,30 +152,30 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="578" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.947@0.23.1680.947" timestamp="1580417243245" />
-    <state width="1638" height="253" key="GridCell.Tab.0.bottom" timestamp="1580508799231">
+    <state width="1638" height="253" key="GridCell.Tab.0.bottom" timestamp="1581353077599">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="253" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1580508799231" />
-    <state width="1638" height="253" key="GridCell.Tab.0.center" timestamp="1580508799230">
+    <state width="1638" height="253" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1581353077599" />
+    <state width="1638" height="253" key="GridCell.Tab.0.center" timestamp="1581353077598">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="253" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1580508799230" />
-    <state width="1638" height="253" key="GridCell.Tab.0.left" timestamp="1580508799230">
+    <state width="1638" height="253" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1581353077598" />
+    <state width="1638" height="253" key="GridCell.Tab.0.left" timestamp="1581353077597">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="253" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1580508799230" />
-    <state width="1638" height="253" key="GridCell.Tab.0.right" timestamp="1580508799231">
+    <state width="1638" height="253" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1581353077597" />
+    <state width="1638" height="253" key="GridCell.Tab.0.right" timestamp="1581353077598">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="253" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1580508799231" />
+    <state width="1638" height="253" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1581353077598" />
     <state x="341" y="135" key="SettingsEditor" timestamp="1580230619612">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="341" y="135" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1580230619612" />
-    <state x="517" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1580394432342">
+    <state x="517" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1581352553200">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="517" y="329" key="com.intellij.ide.util.TipDialog/0.23.1680.947@0.23.1680.947" timestamp="1580394432342" />
+    <state x="517" y="329" key="com.intellij.ide.util.TipDialog/0.23.1680.947@0.23.1680.947" timestamp="1581352553200" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

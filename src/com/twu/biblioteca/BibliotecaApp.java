@@ -42,8 +42,9 @@ public class BibliotecaApp {
     }
 
     public void printListBooks(){
+        System.out.format("%-10s %-10s %-10s %-10s %n", "ID", "TITLE", "AUTHOR", "YEAR");
         for (Book b: getAvailableBookList()) {
-            System.out.format("%-30.30s %-30.30s %-30.30s %n", b.getTitle(), b.getAuthor(), b.getYear());
+            System.out.format("%-10s %-10s %-10s %-10s %n", b.getId(), b.getTitle(), b.getAuthor(), b.getYear());
         }
     }
 

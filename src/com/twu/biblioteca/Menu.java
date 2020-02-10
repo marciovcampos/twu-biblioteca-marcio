@@ -2,12 +2,16 @@ package com.twu.biblioteca;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Menu {
     private List<String> menuOptions;
+    private BibliotecaApp bibliotecaApp;
 
     public Menu() {
         menuOptions = new ArrayList<String>();
+        bibliotecaApp = new BibliotecaApp();
+        bibliotecaApp.createAllBooks();
     }
 
     public void CreateMenu(){
@@ -36,14 +40,18 @@ public class Menu {
     public void select (int option)  {
         switch (option){
             case 1:
-                BibliotecaApp bibliotecaApp = new BibliotecaApp();
-                bibliotecaApp.createAllBooks();
                 bibliotecaApp.printListBooks();
                 break;
             case 2:
                 Librarian lib = new Librarian();
-                System.out.println("CHECK OUT");
+                System.out.println("Plese select a book to checkout:");
+                bibliotecaApp.printListBooks();
 
+                Scanner scanner = new Scanner(System.in);
+                int optionNumber = scanner.nextInt();
+                System.out.println("select:" + optionNumber);
+
+                break;
             case 9:
                 System.exit(0);
 
