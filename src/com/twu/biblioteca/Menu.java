@@ -43,13 +43,12 @@ public class Menu {
                 bibliotecaApp.printListBooks();
                 break;
             case 2:
-                Librarian lib = new Librarian();
                 System.out.println("Plese select a book to checkout:");
                 bibliotecaApp.printListBooks();
 
                 Scanner scanner = new Scanner(System.in);
                 int optionNumber = scanner.nextInt();
-                System.out.println("select:" + optionNumber);
+                bibliotecaApp.checkOutBook(optionNumber);
 
                 break;
             case 9:

@@ -89,6 +89,12 @@ public class BibliotecaApp {
         return b;
     }
 
+    public void checkOutBook(int id){
+        Book book = getBookById(id);
+        book.checkOutBook();
+        System.out.println(book.getTitle());
+    }
+
 }
 
 

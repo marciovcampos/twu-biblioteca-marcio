@@ -9,10 +9,19 @@ import static org.junit.Assert.*;
 
 public class BookTest {
     @Test
-    public void shouldChangeAvailableBook(){
+    public void shouldCheckOutBook(){
         Book book = new Book(1, "B1", "A1", 2000);
-        book.rent();
+        book.checkOutBook();
         assertFalse(book.getAvailable());
+    }
+
+    @Test
+    public void shouldCheckOutAndReturnABook(){
+        Book book = new Book(1, "B1", "A1", 2000);
+        book.checkOutBook();
+        assertFalse(book.getAvailable());
+        book.returnBook();
+        assertTrue(book.getAvailable());
     }
 
 }

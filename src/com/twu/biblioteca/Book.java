@@ -24,6 +24,10 @@ public class Book {
 
     public boolean getAvailable(){ return available;}
 
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
     public Book(int id, String title, String author, Number year){
         this.id = id;
         this.title = title;
@@ -37,8 +41,12 @@ public class Book {
         return title;
     }
 
-    public void rent(){
-        this.available = false;
+    public void checkOutBook(){
+        this.setAvailable(false);
+    }
+
+    public void returnBook() {
+        this.setAvailable(true);
     }
 
 }
