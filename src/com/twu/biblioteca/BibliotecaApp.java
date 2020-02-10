@@ -92,7 +92,7 @@ public class BibliotecaApp {
     public void checkOutBook(int id){
         Book book = getBookById(id);
         book.checkOutBook();
-        System.out.println(book.getTitle());
+        System.out.println("Thank you! Enjoy the book!");
     }
 
 }
