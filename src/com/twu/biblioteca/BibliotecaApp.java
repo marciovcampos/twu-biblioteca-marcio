@@ -91,8 +91,20 @@ public class BibliotecaApp {
 
     public void checkOutBook(int id){
         Book book = getBookById(id);
-        book.checkOutBook();
-        System.out.println("Thank you! Enjoy the book!");
+
+        try{
+            if(book.getAvailable()){
+                book.checkOutBook();
+                System.out.println("Thank you! Enjoy the book!");
+            }else{
+                System.out.println("Sorry, that book is not available!");
+            }
+        }catch (Exception e){
+            System.out.println("Invalid Book!");
+        }
+
+
+
     }
 
 }
