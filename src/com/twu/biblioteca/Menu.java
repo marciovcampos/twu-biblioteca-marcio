@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static com.twu.biblioteca.Constants.*;
+
 public class Menu {
     private List<String> menuOptions;
     private BibliotecaApp bibliotecaApp;
@@ -44,7 +46,7 @@ public class Menu {
                 bibliotecaApp.printListBooks();
                 break;
             case 2:
-                System.out.println("Please select a book to checkout:");
+                System.out.println(SELECT_BOOK_CHECKOUT);
                 bibliotecaApp.printListBooks();
 
                 Scanner scanner = new Scanner(System.in);
@@ -53,7 +55,7 @@ public class Menu {
 
                 break;
             case 3:
-                System.out.println("Please select a book to return:");
+                System.out.println(SELECT_BOOK_RETURN);
                 bibliotecaApp.printCheckOutBooks();
 
                 Scanner scannerReturn = new Scanner(System.in);
@@ -65,7 +67,7 @@ public class Menu {
                 System.exit(0);
 
             default:
-                System.out.println("Please select a valid option!");
+                System.out.println(SELECT_VALID_OPTION);
                 break;
         }
     }

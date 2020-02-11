@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static com.twu.biblioteca.Constants.*;
+
 public class BibliotecaApp {
 
     private ArrayList<Book> bookList;
@@ -38,7 +40,7 @@ public class BibliotecaApp {
     }
 
     public String welcomeMessage() {
-        return "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
+        return WELCOME_MESSAGE;
     }
 
     public void printListBooks(){
@@ -117,12 +119,12 @@ public class BibliotecaApp {
         try{
             if(book.getAvailable()){
                 book.checkOutBook();
-                System.out.println("Thank you! Enjoy the book!");
+                System.out.println(CHECKOUT_SUCCESS_MESSAGE);
             }else{
-                System.out.println("Sorry, that book is not available!");
+                System.out.println(CHECKOUT_UNSUCCESSFUL_MESSAGE);
             }
         }catch (Exception e){
-            System.out.println("Invalid Book!");
+            System.out.println(INVALID_BOOK);
         }
 
     }
@@ -133,12 +135,12 @@ public class BibliotecaApp {
         try{
             if(!book.getAvailable()){
                 book.returnBook();
-                System.out.println("Thank you for returning the book!");
+                System.out.println(RETURN_SUCCESS_MESSAGE);
             }else{
-                System.out.println("Sorry, that book has already been returned!");
+                System.out.println(RETURN_UNSUCCESSFUL_MESSAGE);
             }
         }catch (Exception e){
-            System.out.println("That is a not valid book to return!");
+            System.out.println(INVALID_BOOK_RETURN);
         }
 
     }
